@@ -215,6 +215,7 @@ public class WebSocketUploader extends WebSocketClient implements IChunkUploader
      *
      * @param data
      */
+    @Override
     public void upload(byte[] data){
         try{
             this.send(data);
@@ -227,6 +228,7 @@ public class WebSocketUploader extends WebSocketClient implements IChunkUploader
     /**
      * Stop by sending out zero byte of data
      */
+    @Override
     public void stop(){
         byte[] stopData = new byte[0];
         this.upload(stopData);
