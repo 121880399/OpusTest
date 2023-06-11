@@ -29,9 +29,9 @@ public class SpeechConfiguration {
     // Audio channels
     public static final int AUDIO_CHANNELS = 1;
     // Frame size
-    public static final int FRAME_SIZE = 160;
+    public static final int FRAME_SIZE = 960;
     // Sample rate
-    public static final int SAMPLE_RATE = 16000;
+    public static final int SAMPLE_RATE = 48000;
     // Timeout
     public int inactivityTimeout = 600;
     // Data format
